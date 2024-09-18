@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
-  buyChocoCake,
+  buyChocoCakeAction,
   buyVanillaCakeAction,
-  refundChocoCake,
+  refundChocoCakeAction,
   refundVanillaCakeAction,
 } from "./redux/cakes/cakeAction";
-// import {vanillaCakes, chocoCakes} from "./redux/cakes/cakeReducer"
+
 
 const App = () => {
   const dispatch = useDispatch();
@@ -20,6 +20,7 @@ const App = () => {
         onClick={() => {
           dispatch(buyVanillaCakeAction);
         }}
+        style={{marginRight:"12px"}}
       >
         {" "}
         BUY VANILLA CAKE
@@ -39,8 +40,9 @@ const App = () => {
       <h1>Choco Cake: {abc.chocoCakes}</h1>
       <button
         onClick={() => {
-          dispatch(buyChocoCake);
+          dispatch(buyChocoCakeAction);
         }}
+        style={{marginRight:"12px"}}
       >
         {" "}
         BUY CHOCO CAKE
@@ -48,7 +50,7 @@ const App = () => {
 
       <button
         onClick={() => {
-          dispatch(refundChocoCake);
+          dispatch(refundChocoCakeAction);
         }}
       >
         {" "}

@@ -13,17 +13,17 @@ const refundVanillaCakeAction = {
     type: REFUND_VANILLA_CAKE,
 };
 
-const buyChocoCake = {
+const buyChocoCakeAction = {
     type: BUY_CHOCO_CAKE,
 };
 
-const refundChocoCake = {
+const refundChocoCakeAction = {
     type: REFUND_CHOCO_CAKE,
 };
 
 export {
     buyVanillaCakeAction,
     refundVanillaCakeAction,
-    buyChocoCake,
-    refundChocoCake,
+    buyChocoCakeAction,
+    refundChocoCakeAction,
 };
